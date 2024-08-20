@@ -6,10 +6,10 @@
    - Command: `touch Abdul.txt`
 
 2. **Add a Few Lines to the File Without Using a Text Editor**
-   - Used `echo` command in a script to add lines to the file.
+   - Used `echo " " >> ` command in a script to add lines to the file.
 
 3. **Add a Few More Lines to the File Without Using a Text Editor**
-   - Used `echo` command to append additional lines to the file.
+   - Used `echo "" >> ` command to append additional lines to the file.
 
 4. **Rename the File with Your Last Name**
    - Command: `mv Abdul.txt Azeem.txt`
