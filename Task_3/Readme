@@ -1,0 +1,47 @@
+
+
+1. Create a File Named azeem.txt
+   Command:
+   touch azeem.txt
+   
+
+2. Ensure That Only You Can Modify the File
+   Symbolic Mode:
+   chmod u=rw,go= azeem.txt
+   
+   Absolute (Numeric) Mode:
+   chmod 600 azeem.txt
+   
+
+3. Create a New Group Named trusted
+   Command:
+   sudo groupadd trusted
+  
+
+4. Add Users veer and billu to the trusted Group
+   Command:
+   sudo usermod -aG trusted veer
+   sudo usermod -aG trusted billu
+   
+
+5. Change the Group Ownership of the File to trusted
+   Command:
+   sudo chgrp trusted azeem.txt
+  
+
+6. Allow the trusted Group to Read and Modify the File
+   Symbolic Mode:
+   chmod g=rw azeem.txt
+   
+   Absolute (Numeric) Mode:
+   chmod 660 azeem.txt
+  
+
+7. Allow All Other Users to Read the File
+   Symbolic Mode:
+   chmod o=r azeem.txt
+  
+   Absolute (Numeric) Mode:
+   chmod 664 azeem.txt
+   
+
